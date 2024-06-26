@@ -54,7 +54,7 @@
         }
 
         a {
-            color: #007bff;
+            color: #0b722e;
             text-decoration: none;
         }
 
@@ -63,12 +63,20 @@
         }
 
         .btn-outline-primary {
-            border-color: #007bff;
-            color: #007bff;
+            border-color: #0b722e;
+            color: #0b722e;
+            border-radius: 20px;
+            outline: none;
         }
 
-        .btn-outline-primary:hover {
-            background-color: #007bff;
+        .btn-outline-primary:hover, .btn-outline-primary:active {
+            background-color: #0b722e !important;
+            color: white !important;
+            border-radius: 20px;
+        }
+
+        ::selection {
+            background-color: #0b722e;
             color: white;
         }
 
@@ -102,7 +110,7 @@
         <h1 class="raleway">Welcome to PEPELUM, <a href="https://pepecoin.org/" target="_blank"
                 rel="noopener noreferrer">₱epecoin</a>
             ElectrumX server</h1>
-            <hr>
+        <hr>
         <p class="lead raleway"><strong>Connect to server using:</strong></p>
         <ul class="list-unstyled">
             <li class="mb-3"><strong>TCP:</strong> <span id="tcpAddress">tcp://mainnet.pepelum.site:50001</span> <button
@@ -137,10 +145,10 @@
                 data-bs-target="#qrModalLTC">QR Code</button>
         </p>
         <hr>
-        <p><a href="https://electrumx-spesmilo.readthedocs.io/" target="_blank"
-                rel="noopener noreferrer">Documentation</a>, this server uses <a
+        <p class="lead raleway"><a href="https://electrumx-spesmilo.readthedocs.io/" target="_blank"
+                rel="noopener noreferrer"><strong>Documentation,</strong></a> this server uses <a
                 href="https://github.com/PepeEnthusiast/electrumx-pepecoin" target="_blank"
-                rel="noopener noreferrer">modified ElectrumX</a></p>
+                rel="noopener noreferrer"><strong>modified ElectrumX</strong></a></p>
         <p>ElectrumX 1.16.0</p>
     </div>
 
