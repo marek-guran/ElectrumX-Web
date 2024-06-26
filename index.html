@@ -25,13 +25,17 @@
     <style>
         body {
             background-color: #f0f2f5;
-            font-family: 'Raleway', 'Roboto', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+
+        .raleway {
+            font-family: 'Raleway';
         }
 
         .container {
@@ -83,22 +87,22 @@
 
         .lead {
             font-weight: 400;
-            color: #666;
         }
 
         .modal-img {
             width: 100%;
             height: auto;
-            /* Maintain aspect ratio */
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Welcome to PEPELUM, <a href="https://pepecoin.org/" target="_blank" rel="noopener noreferrer">₱epecoin</a>
+        <h1 class="raleway">Welcome to PEPELUM, <a href="https://pepecoin.org/" target="_blank"
+                rel="noopener noreferrer">₱epecoin</a>
             ElectrumX server</h1>
-        <p class="lead">Connect to ElectrumX server by:</p>
+            <hr>
+        <p class="lead raleway"><strong>Connect to server using:</strong></p>
         <ul class="list-unstyled">
             <li class="mb-3"><strong>TCP:</strong> <span id="tcpAddress">tcp://mainnet.pepelum.site:50001</span> <button
                     class="btn btn-sm btn-outline-primary copy-button" data-clipboard-target="#tcpAddress">Copy</button>
@@ -112,7 +116,7 @@
             </li>
         </ul>
         <hr>
-        <p>Donate this ElectrumX server, so it can keep runnig:</p>
+        <p class="lead raleway"><strong>You can support this server by donating:</strong></p>
         <p><strong>Pepecoin:</strong> <span id="donationAddressPEPE">PgQN3BqErwVeCpbmAx7gSSJijBdjGL4F2K</span>
             <button class="btn btn-sm btn-outline-primary copy-button"
                 data-clipboard-target="#donationAddressPEPE">Copy</button>
@@ -131,6 +135,12 @@
             <button class="btn btn-sm btn-outline-primary qr-button" data-bs-toggle="modal"
                 data-bs-target="#qrModalLTC">QR Code</button>
         </p>
+        <hr>
+        <p><a href="https://electrumx-spesmilo.readthedocs.io/" target="_blank"
+                rel="noopener noreferrer">Documentation</a>, this server uses <a
+                href="https://github.com/PepeEnthusiast/electrumx-pepecoin" target="_blank"
+                rel="noopener noreferrer">modified ElectrumX</a></p>
+        <p>ElectrumX 1.16.0</p>
     </div>
 
     <!-- QR Code Modal -->
